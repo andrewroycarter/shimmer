@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22068D9D29B66DA300823155 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 22068D9C29B66DA300823155 /* Shimmer */; };
 		2276A57C29B665A500F35A3C /* ShimmerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276A57B29B665A500F35A3C /* ShimmerDemoApp.swift */; };
 		2276A57E29B665A500F35A3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276A57D29B665A500F35A3C /* ContentView.swift */; };
 		2276A58029B665A500F35A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2276A57F29B665A500F35A3C /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		2276A57D29B665A500F35A3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2276A57F29B665A500F35A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2276A58229B665A500F35A3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2276A58C29B6662D00F35A3C /* Shimmer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Shimmer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22068D9D29B66DA300823155 /* Shimmer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22068D9B29B66DA300823155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2276A56F29B665A500F35A3C = {
 			isa = PBXGroup;
 			children = (
+				2276A58C29B6662D00F35A3C /* Shimmer */,
 				2276A57A29B665A500F35A3C /* ShimmerDemo */,
 				2276A57929B665A500F35A3C /* Products */,
+				22068D9B29B66DA300823155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = ShimmerDemo;
+			packageProductDependencies = (
+				22068D9C29B66DA300823155 /* Shimmer */,
+			);
 			productName = ShimmerDemo;
 			productReference = 2276A57829B665A500F35A3C /* ShimmerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +352,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22068D9C29B66DA300823155 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Shimmer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2276A57029B665A500F35A3C /* Project object */;
 }

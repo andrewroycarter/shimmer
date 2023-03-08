@@ -6,17 +6,42 @@
 //
 
 import SwiftUI
+import Shimmer
 
 struct ContentView: View {
+    
+    @State var shouldRedact = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                Image(systemName: "circle")
+                VStack {
+                    Text("Here is some large text")
+                        .font(.title)
+                        .shimmers()
+                        .redacted(reason: shouldRedact ? .placeholder : [])
+                    HStack {
+                        Spacer()
+                        Text("Text One")
+                        Spacer()
+                        Text("Text Two")
+                        Spacer()
+                        Text("Text Three")
+                        Spacer()
+                    }
+                }
+            }
+            .padding(20.0)
+            .shimmers()
+            .redacted(reason: shouldRedact ? .placeholder : [])
+            
+            Button("Redact") {
+                shouldRedact.toggle()
+            }
         }
-        .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
