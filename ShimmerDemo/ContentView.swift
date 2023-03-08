@@ -19,7 +19,6 @@ struct ContentView: View {
                 VStack {
                     Text("Here is some large text")
                         .font(.title)
-                        .shimmers()
                         .redacted(reason: shouldRedact ? .placeholder : [])
                     HStack {
                         Spacer()
